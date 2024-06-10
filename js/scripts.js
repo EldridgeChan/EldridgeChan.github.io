@@ -50,5 +50,10 @@ window.addEventListener('DOMContentLoaded', event => {
             }
         });
     });
-
+    $(document).ready(function(){
+        $(".modal").on('hide.bs.modal', function(){
+          var memory = $(this).html();
+          $(this).html(memory);
+        });
+      });
 });
