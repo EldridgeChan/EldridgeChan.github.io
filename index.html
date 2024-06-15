@@ -203,35 +203,102 @@
                     <div class="modal-body pb-5">
                         <div class="container">
                             <div class="row justify-content-center">
-                                <div class="col-lg-8">
+                                <div class="col-lg-10">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0 text-center">Do A Barrel Roll??</h2>
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0 text-center">
+                                        Do A Barrel Roll??
+                                    </h2>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
                                     </div>
                                     <!-- Portfolio Modal - Video-->
                                      <div>
-                                        <iframe src="https://www.youtube.com/embed/4BSbNsEk2Kc" width="100%" class="video-lg video-md video-sm video-xs" allowfullscreen></iframe>
+                                        <iframe src="https://www.youtube.com/embed/4BSbNsEk2Kc" width="100%" class="iframe-lg iframe-md iframe-sm iframe-xs" allowfullscreen></iframe>
                                     </div>
                                     <!-- Portfolio Sumary-->
-                                    <div>
+                                    <div class="mb-5 mt-3">
                                         <h3 class="text-center">Summary</h3>
-                                        <p></p>
+                                        <p>
+                                            “Do A Barrel Roll??” is a “Getting over it” type of platformer developed via Unity Engine. It introduces a unique control method of character and challenging level design with a punishing penalty when making a mistake. This project was developed solo in 9 months with a minimum of downloaded assets.  All game scripts, tiles, UI elements, main menu background, barrel sprite and pirate ship sprite are created by myself.
+                                        </p>
                                     </div>
                                     <!-- Portfolio Contributions -->
-
-                                     <div class="row">
-                                        <h4>Design</h4>
-                                        <div class="col-6">
-                                            
+                                     <!-- Programming -->
+                                    <div class="row mb-5">
+                                        <h4><u>Programming</u></h4>
+                                        <div class="col-lg-6 col-md-12">
+                                            <video class="video" autoplay loop muted>
+                                                <source src="assets/Videos/Script_Emoji.mp4" type="video/mp4">
+                                                Your browser does not support the video tag.
+                                            </video>
+                                            <br>
+                                            <br>
+                                            <video class="video" autoplay loop muted>
+                                                <source src="assets/Videos/Script_bug.mp4" type="video/mp4">
+                                                Your browser does not support the video tag.
+                                            </video>
                                         </div>
-                                        <div class="col-6">
-                                            
+                                        <div class="col-lg-6 col-md-12">
+                                            <p>
+                                                During development, I found that the emoji movement requires some complicated physics calculations. At first, I defined realistic physics from scratch. However, the movement was boring. So, I make the emoji movement controlled by two different methods where the effectiveness of the methods change depending on the barrel's angular velocity. As a result, the movement of emoji becomes ridiculous and funny but at the same time, still realistic enough.
+                                            </p>
+                                            <p>
+                                                On the other hand, there is a bug where the character sometimes gets stuck inside the tilemap when high in velocity. Sometimes, Unity's physics engine itself is enough to save the situation. However, it is far from consistent. Therefore, I try to move the character to the opposite direction of its velocity to free it when it gets stuck in more than one frame. As the engine may fix it itself. As a result, the bug never showed again. Providing a smooth gameplay experience to the player.
+                                            </p>
                                         </div>
-                                     </div>
+                                    </div>
+                                    <!-- Gameplay Design -->
+                                    <div class="row mb-5">
+                                        <h4><u>Gameplay Design</u></h4>
+                                        <div class="col-lg-6 col-md-12">
+                                            <video class="video" autoplay loop muted>
+                                                <source src="assets/Videos/GameDesign_Prams.mp4" type="video/mp4">
+                                                Your browser does not support the video tag.
+                                            </video>
+                                            <br>
+                                            <br>
+                                            <video class="video" autoplay loop muted>
+                                                <source src="assets/Videos/GameDesign_SlopeClimb.mp4" type="video/mp4">
+                                                Your browser does not support the video tag.
+                                            </video>
+                                        </div>
+                                        <div class="col-lg-6 col-md-12">
+                                            <p>
+                                                I tend to design the gameplay to a very detailed level. But the downside is, the required number of parameters is large. As a result, the goal of design becomes very vague. To address this, I created a few situations that need to be satisfied. And the goal would be finding a parameter set that satisfies all the situations. For example, in this game, I want the player to climb a 3 by 1 slope with the requirement of drawing minimum 1-2 circles per second so that it is very possible but requires a little bit of effort. At the same time, after falling from a 1 by 3 slope I want the player to be able to stop in 3 - 4 flat tiles length so that player has to really try and always worry of not stopping in time. At the end, after many trials of play testing, I found the parameter set to satisfy both situations and fit the goal of my gameplay design.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <!-- Level Design -->
+                                    <div class="row mb-5">
+                                        <h4><u>Level Design</u></h4>
+                                        <div class="col-lg-6 col-md-12">
+                                            <video class="video" autoplay loop muted>
+                                                <source src="assets/Videos/LevelDesign_Fall.mp4" type="video/mp4">
+                                                Your browser does not support the video tag.
+                                            </video>
+                                            <br>
+                                            <br>
+                                            <video class="video" autoplay loop muted>
+                                                <source src="assets/Videos/LevelDesign_Save.mp4" type="video/mp4">
+                                                Your browser does not support the video tag.
+                                            </video>
+                                        </div>
+                                        <div class="col-lg-6 col-md-12">
+                                            <p>
+                                                Regarding this type of game, I always think that the player can't do anything after a mistake is unfair. The different outcome only depends on the position of the mistake being made. Therefore, I want to design the level so that after making a mistake. Though some progress will be lost but the amount of progress loss depends on players actions. However, it is very difficult to design such levels. So I first sketch the platforming idea part of the section. Then link the section to the previous section and consider the potential failure and their outcome. Next, add appropriate potential save to the previous section or the current section. Lastly, repeat between play testing the level and fine tuning the level until I am satisfied with the result. At the end, I provide a challenging and sometimes frustrating but always fair experience to the players.
+                                            </p>
+                                        </div>
+                                    </div>
+                                     <!-- Related Link -->
+                                    <h4>Related Link</h4>
+                                    <p>
+                                        itch.io Demo: <a href="https://solthunder.itch.io/do-a-barrel-roll">https://solthunder.itch.io/do-a-barrel-roll</a>
+                                        <br>
+                                        Steam Page: <a href="https://store.steampowered.com/app/2766620/Do_A_Barrel_Roll">https://store.steampowered.com/app/2766620/Do_A_Barrel_Roll</a>
+                                    </p>
                                      <!-- Close Button -->
-                                     <div class="text-center">
+                                    <div class="text-center">
                                         <button class="btn btn-primary mt-5" data-bs-dismiss="modal">
                                             <i class="fas fa-xmark fa-fw"></i>
                                             Close Window

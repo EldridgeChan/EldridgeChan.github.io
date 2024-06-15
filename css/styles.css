@@ -11046,26 +11046,32 @@ html {
   background-color: #1a252f;
 }
 
+/*Custom Class Below*/
+
 @media (min-width: 100px) {
-  .video-xs {
+  .iframe-xs {
     height: 240px;
   }
 }
 
 @media (min-width: 577px) {
-  .video-md {
+  .iframe-sm {
     height: 250px;
   }
 }
 
 @media (min-width: 992px) {
-  .video-md {
-    height: 275px;
+  .iframe-md {
+    height: 347px;
   }
 }
 
 @media (min-width: 1200px) {
-  .video-lg {
-    height: 400px;
+  .iframe-lg {
+    height: 505px;
   }
+}
+
+.video {
+  max-width: 100%;
 }
