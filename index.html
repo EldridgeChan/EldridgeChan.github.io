@@ -61,7 +61,7 @@
                 <!-- Portfolio Grid Items-->
                 <div class="row justify-content-center">
                     <!-- Portfolio Item 1-->
-                    <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="col-sm-10 col-md-10 col-lg-6 col-xl-4 mb-5">
                         <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#PortfolioItem1">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-info-circle fa-3x"></i></div>
@@ -88,12 +88,12 @@
                         </div>
                     </div>
                     <!-- Portfolio Item 2-->
-                    <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="col-sm-10 col-md-10 col-lg-6 col-xl-4 mb-5">
                         <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#PortfolioItem2">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-info-circle fa-3x"></i></div>
                             </div>
-                            <h3 class="ms-1">Elementalist (2023)</h3>
+                                <h3 class="ms-1">Elementalist (2023)</h3>
                             <img class="img-fluid" src="assets/img/Elementalist/CoverImage.png" alt="Elementalist" />
                             <div class="row">
                                 <div class="col-6 ms-1">
@@ -109,6 +109,34 @@
                                     <br/>Scripting,
                                     <br/>Shader,
                                     <br/>Game Design
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 3-->
+                    <div class="col-sm-10 col-md-10 col-lg-6 col-xl-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#PortfolioItem3">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-info-circle fa-3x"></i></div>
+                            </div>
+                            <h3 class="ms-1">3Sec Commander (2023)</h3>
+                            <img class="img-fluid" src="assets/img/3SecCommander/3SecCommander_Cover.png" alt="Elementalist" />
+                            <div class="row">
+                                <div class="col-6 ms-1">
+                                    <p>Engine: Unity</p>
+                                    <p>Team Size: 2 people</p>
+                                    <p>Duration: 1  week</p>
+                                </div>
+                                <div class="col-1 me-2">
+                                    <p>Tags:</p>
+                                </div>
+                                <div class="col-4">
+                                    Strategy,
+                                    <br/>Multiplayer,
+                                    <br/>AI,
+                                    <br/>Scripting,
+                                    <br/>Game Design
+                                    
                                 </div>
                             </div>
                         </div>
@@ -371,10 +399,10 @@
                                     <div class="row mb-5">
                                         <h4><u>Programming</u></h4>
                                         <div class="col-lg-6 col-md-12">
-                                            <img class="img-fluid" src="assets/img/Elementalist/Solution01.png" alt="Solution02"/>
+                                            <img class="img-fluid" src="assets/img/Elementalist/Solution01.png" alt="Solution01"/>
                                             <br>
                                             <br>
-                                            <img class="img-fluid" src="assets/img/Elementalist/Solution02.png" alt="Solution01"/>
+                                            <img class="img-fluid" src="assets/img/Elementalist/Solution02.png" alt="Solution02"/>
                                         </div>
                                         <div class="col-lg-6 col-md-12">
                                             <p>
@@ -425,6 +453,115 @@
                                     <h4>Related Link</h4>
                                     <p>
                                         itch.io Page: <a href="https://solthunder.itch.io/elementalist">https://solthunder.itch.io/elementalist</a>
+                                    </p>
+                                     <!-- Close Button -->
+                                    <div class="text-center">
+                                        <button class="btn btn-primary mt-5" data-bs-dismiss="modal">
+                                            <i class="fas fa-xmark fa-fw"></i>
+                                            Close Window
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 3-->
+        <div class="portfolio-modal modal fade" id="PortfolioItem3" tabindex="-1" aria-labelledby="PortfolioItem3" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-10">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0 text-center">
+                                        3 Second Commander
+                                    </h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Video-->
+                                    <div>
+                                        <iframe src="https://www.youtube.com/embed/ImOwqkiksSQ" width="100%" class="iframe-lg iframe-md iframe-sm iframe-xs" allowfullscreen></iframe>
+                                    </div>
+                                    <!-- Portfolio Sumary-->
+                                    <div class="mb-5 mt-3">
+                                        <h3 class="text-center">Summary</h3>
+                                        <p>
+                                            “3 Second Commander” is a strategy game developed with Unity Engine during icoJam2023. In this game, the player plays as a commander of an army with up to 4 soldiers. Players can only give instructions to their soldier during the control phase with a timer counting 3, 2, and 1. After the control phase, all the soldiers will take action following the instructions the player had given. Pawns from both sides will be instructed and action at the same time. So, players have to predict their enemies actions to achieve victory.
+                                        </p>
+                                    </div>
+                                    <!-- Portfolio Contributions -->
+                                     <!-- Programming -->
+                                    <div class="row mb-5">
+                                        <h4><u>Programming</u></h4>
+                                        <div class="col-lg-6 col-md-12">
+                                            <img class="img-fluid" src="assets/img/3SecCommander/3SecCommander_Offensivesness.png" alt="Offensiveness Graph"/>
+                                            <br>
+                                            <br>
+                                            <img class="img-fluid" src="assets/img/3SecCommander/3SecCommander_ArcherAI.png" alt="ArcherAI"/>
+                                            <br>
+                                            <br>
+                                            <img class="img-fluid" src="assets/img/3SecCommander/3SecCommander_KnightAI.png" alt="KnightAI"/>
+                                            <br>
+                                            <br>
+                                            <img class="img-fluid" src="assets/img/3SecCommander/3SecCommander_ScoutAI.png" alt="ScoutAI"/>
+                                            <br>
+                                            <br>
+                                            <video class="video" autoplay loop muted>
+                                                <source src="assets/Videos/3SecCommander_Multiplayer.mp4" type="video/mp4">
+                                                Your browser does not support the video tag.
+                                            </video>
+                                        </div>
+                                        <div class="col-lg-6 col-md-12">
+                                            <p>
+                                                Since this game is developed during a game jam, we have very limited time. However, the game idea required enemy AI or multiplayer implementation to work. In which, either of them takes a long time to code, considering we only have 2 days for the game jam. During the game jam, we decided to stick with AI instead of multiplayer considering it is a game jam setting. After the game jam, enemy AI is reworked and multiplayer is implemented.
+                                            </p>
+                                            <p>
+                                                Before the implementation of the enemy AI, I need to design the architecture of the AI system. For the enemy AI of this game, the requirements are being able to observe the battlefield, including alli and enemy then decide an action of the pawn. Since the AI would need to observe the battlefield from the start for every turn. Therefore, it should be a behaviour tree like structure. However, it is different to a traditional behaviour tree. There will not be a processing return value since the end result is a decision for the turn. It will only return successful or failure, in which returning failure means error occurred. Additionally, an AI like this would need some randomness to be more unpredictable. Plus I also want them to behave like a team. Therefore, an offensiveness variable is added to the AI for each turn. It is determined by level of advantages i.e. number difference of pawns and a random generated number. Some nodes in the tree would return false when the offensiveness is too high or too low.
+                                            </p>
+                                            <p>
+                                                Implementing enemy AI, I first take note of all the possible actions i.e. end nodes of all three types of pawns would take. Then, take note of all the possible checks i.e. branch nodes. Next, sketch the diagram for all three types of pawns AI. Lastly, simply follow the diagram, and implement their AI. I found this workflow very efficient and free of mistakes. As a result, the first version of the enemy AI system managed to be finished before the game jam deadline.
+                                            </p>
+                                            <p>
+                                                On the other hand, multiplayer was being implemented after the game jam. In this project, multiplayer is implemented through unity netcode package. However, I did not use the built-in synchronisation functionality although it may decrease some work load. There are a few reasons. First, I would like the player pawns alway start at the same side, increasing the consistency and decreasing confusion. Second, pawns will only move in the action phase. Sending packages between players constantly is redundant. Therefore, I decide to only send packages when needed. At the start of the game, players would send their pawn setup to the server. When the server receives the setup from both players, the game will be started. In addition, pawn moves will be sent to the server at the end of the control phase. Again, once the server receives pawn moves from both players, the server will send back the pawn actions from both players to both players. Lastly, the moves will be translated and inputted into the enemy pawns locally. Performing the same movement to both sides, just mirrored.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <!-- Gameplay Design -->
+                                    <div class="row mb-5">
+                                        <h4><u>Gameplay Design</u></h4>
+                                        <div class="col-lg-6 col-md-12">
+                                            <img class="img-fluid" src="assets/img/3SecCommander/3SecCommander_Archer.png" alt="Archer Pawn"/>
+                                            <br><br>
+                                            <img class="img-fluid" src="assets/img/3SecCommander/3SecCommander_Knight.png" alt="Knight Pawn"/>
+                                            <br><br>
+                                            <img class="img-fluid" src="assets/img/3SecCommander/3SecCommander_Scout.png" alt="Scout Pawn"/>
+                                        </div>
+                                        <div class="col-lg-6 col-md-12">
+                                            <p>
+                                                During the designing process of this game, I would like the 3 classes to counter each other like rock paper scissors. However, the advantage of the counter relationship should not be too significant. As strategy and prediction should be the most important component in the game play. Therefore, my aim is to design an advantage for each class against the counter class. But still able to turn the table if the prediction of the player is correct and precise. 
+                                            </p>
+                                            <p>
+                                                Regarding the relationship between archer and knight, archers move distances further than knight. So, an archer can kite the knight. However, archers would need to reload after an attack which it cannot move when reloading. Therefore, despite the advantage to the archers, knights can win against archers if they can catch archers during the reload.
+                                            </p>
+                                            <p>
+                                                As for the relationship between knight and scout, knights have significantly higher health than scout, plus, if knight blocks an scout attack, scout cannot damage another pawn with the same attack. Knight can win scouts by trading hits easily. However, if scouts are able to catch the knight off guard and attack from behind, it is possible that a scout will defeat the knight.
+                                            </p>
+                                            <p>
+                                                Finally, the relationship between scout and archer, as scouts can move very far. They can punish a reloading archer easily. However, since archers, especially a reloading one, are such a good target for scouts. The action of the scout can be easily predicted and punished by another pawn. 
+                                            </p>
+                                        </div>
+                                    </div>
+                                     <!-- Related Link -->
+                                    <h4>Related Link</h4>
+                                    <p>
+                                        itch.io Page: <a href="https://solthunder.itch.io/3sec-commander">https://solthunder.itch.io/3sec-commander</a>
                                     </p>
                                      <!-- Close Button -->
                                     <div class="text-center">
